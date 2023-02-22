@@ -4,8 +4,8 @@
 
 * **HW1:** &nbsp;*Apriori-algorithm / FP-growth algorithm* <br>
 Implement **Apriori-algorithm** and **FP-growth algorithm**, and use IBM Quest Synthetic Data Generator <br>
-to generate some datasets to analyze how the support and confidence levels affect the association of <br>
-data selected from the dataset. Also, test and analyze datasets downloaded from Kaggle.
+to generate some datasets to analyze how the support and confidence affect the association of <br>
+data selected from the dataset. Furthermore, test and analyze datasets downloaded from Kaggle.
 
 * **HW2:** &nbsp;*Analyze self-generated data with machine learning models.* <br>
 Analyze the **self-generated data** and **set rules** to classify the data using machine learning models. <br>
