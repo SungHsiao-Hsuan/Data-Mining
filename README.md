@@ -2,11 +2,17 @@
 
 ### There are three assignments for the Data Mining course in this semester.
 
-* **HW1:** 
-Implement <font color = 0E3495 >**Apriori-algorithm**</font> and <font color = 0E3495 >**FP-growth algorithm**</font>, and use IBM Quest Synthetic Data Generator to generate some datasets to analyze how the support and confidence levels affect the association of data selected from the dataset. Also, test and analyze datasets downloaded from Kaggle.
+* **HW1:** &nbsp;*Apriori-algorithm / FP-growth algorithm* <br>
+Implement **Apriori-algorithm** and **FP-growth algorithm**, and use IBM Quest Synthetic Data Generator <br>
+to generate some datasets to analyze how the support and confidence levels affect the association of <br>
+data selected from the dataset. Also, test and analyze datasets downloaded from Kaggle.
 
-* **HW2:** 
-Analyze the <font color = 0E3495 > **self-generated data** </font> and <font color = 0E3495 >**set rules**</font> to classify the data using machine learning models. Then observe and analyze whether different classifiers can correctly identify the rules for classifying the data, and whether there are different results when the data contains noise.
+* **HW2:** &nbsp;*Analyze self-generated data with machine learning models.* <br>
+Analyze the **self-generated data** and **set rules** to classify the data using machine learning models. <br>
+Then observe and analyze whether different classifiers can correctly identify the rules for classifying <br> 
+the data, and whether there are different results when the data contains noise.
 
-* **HW3:** 
-Implement <font color = 0E3495 >**HITS**</font>, <font color = 0E3495 >**PageRank**</font>, and <font color = 0E3495 >**SimRank algorithms**</font>, and calculate the <font color = EB9127 >**authority**</font>, <font color = EB9127 >**hubs**</font>, <font color = EB9127 >**Pagerank**</font>, and <font color = EB9127 >**Simrank values**</font> of each vertex in the graph to find out the important vertices and discover the characteristics of each algorithm.
+* **HW3:** &nbsp; *Implement HIS, PageRank, SimRank* <br>
+Implement **HITS**, **PageRank**, and **SimRank algorithms**, and calculate the **authority**, **hubs**, **Pagerank**, <br>
+and **Simrank values** of each vertex in the graph to find out the important vertices and discover <br>
+the characteristics of each algorithm.
