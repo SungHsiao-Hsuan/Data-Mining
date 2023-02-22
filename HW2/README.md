@@ -29,11 +29,11 @@ years old. The data will be subject to the following constraints to better refle
   Adhesive capsulitis is occasionally misdiagnosed as bursitis or pseudo-adhesive capsulitis (caused by muscle guarding) if the Coracoid process test is not performed. Therefore, when analyzing noise data, there is an 0.08 probability that pseudo-adhesive capsulitis will be diagnosed as adhesive capsulitis, an 0.05 probability that bursitis will be diagnosed as adhesive capsulitis, and a 0.05 probability that adhesive capsulitis will be diagnosed as non-adhesive capsulitis. This simulates a dataset collected with clinical misdiagnosis.
 
 * **Absolutely right rules setting** <br>
-1. Passive external rotation < 40°
-2. Passive abduction or Passive flexion < 125°
-3. Coracoid process test is positive
-4. Pain in your shoulder even though smallest movement
-5. Normal on X-rays
+ 1. Passive external rotation < 40°
+ 2. Passive abduction or Passive flexion < 125°
+ 3. Coracoid process test is positive
+ 4. Pain in your shoulder even though smallest movement
+ 5. Normal on X-rays
 
    **To be classified as a patient with Adhesive Capsulitis, one must meet all five of the above conditions.**
 
