@@ -1,6 +1,6 @@
 ## HW2: &nbsp;*Analyze self-generated data with machine learning models.*
 
-Full report is in the HW1 directory
+Full report is in the HW2 directory
 
 #### Description:<br>
 Analyze the **self-generated data** and **set rules** to classify the data with machine learning models. <br>
@@ -25,4 +25,18 @@ years old. The data will be subject to the following constraints to better refle
   * B. AROM<= PROM (AROM may be affected by factors such as muscle strength, whether the shoulder is injured, or whether the nearby muscles are tight. AROM is set to have a 20% chance of being less than PROM and an 80% chance of being equal to PROM. Generally, AROM = PROM for the general population.) 
   * C. If Active Flexion ROM is less than 90 degrees, the Empty Can Test cannot be performed. At this time, the Empty Can Test will be marked as -1 to indicate that it cannot be tested. 
   * D. The incidence of adhesive capsulitis in clinical settings is approximately 3-5%. In order to make the generated dataset closer to clinical data, the incidence of adhesive capsulitis patients will also be controlled within 3-5%. 
-  * **Noise data**: Adhesive capsulitis is occasionally misdiagnosed as bursitis or pseudo-adhesive capsulitis (caused by muscle guarding) if the Coracoid process test is not performed. Therefore, when analyzing noise data, there is an 0.08 probability that pseudo-adhesive capsulitis will be diagnosed as adhesive capsulitis, an 0.05 probability that bursitis will be diagnosed as adhesive capsulitis, and a 0.05 probability that adhesive capsulitis will be diagnosed as non-adhesive capsulitis. This simulates a dataset collected with clinical misdiagnosis.
+  * **Noise data**: <br>
+  Adhesive capsulitis is occasionally misdiagnosed as bursitis or pseudo-adhesive capsulitis (caused by muscle guarding) if the Coracoid process test is not performed. Therefore, when analyzing noise data, there is an 0.08 probability that pseudo-adhesive capsulitis will be diagnosed as adhesive capsulitis, an 0.05 probability that bursitis will be diagnosed as adhesive capsulitis, and a 0.05 probability that adhesive capsulitis will be diagnosed as non-adhesive capsulitis. This simulates a dataset collected with clinical misdiagnosis.
+
+* **Absolutely right rules setting** <br>
+1. Passive external rotation < 40°
+2. Passive abduction or Passive flexion < 125°
+3. Coracoid process test is positive
+4. Pain in your shoulder even though smallest movement
+5. Normal on X-rays
+
+   **To be classified as a patient with Adhesive Capsulitis, one must meet all five of the above conditions.**
+
+* **Conclusion** <br>
+Among the three models, decision tree appears to be the best choice as an auxiliary diagnostic tool for adhesive capsulitis in clinical practice. Even with the addition of noise, the AUC is still above 0.8. If an additional model is needed, the combination of KNN and decision tree would be a better choice, but if a patient is classified as negative, the decision tree's judgment should be given more weight to reduce the risk of false negatives. <br>
+In this experiment, we simulated the physical examination that may be performed for adhesive capsulitis in clinical practice. AROM and PROM will have a highly correlated relationship, so the decision tree's use of AROM as a feature is relatively acceptable. However, the decision tree model still accurately identified the other important physical examination features with PROM as the main feature. This is actually reasonable because many diagnoses in physical examination are based on if a certain condition is met, followed by testing another condition to gradually approach the suspected disease, which is very similar to the core concept of decision tree. Therefore, it is not surprising that the decision tree is the best-performing model. However, when noise is increased, the decision tree is highly sensitive to noise, and too many misdiagnosed data or erroneous labels can destroy the entire tree. Therefore, the misdiagnosed data cannot be too many, or the overall sample size must be large enough to dilute the impact of erroneous labels.
