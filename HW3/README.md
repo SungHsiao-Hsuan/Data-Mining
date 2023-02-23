@@ -38,7 +38,7 @@ enter `python main.py --dataset --authority --hub --PageRank --SimRank --ibm_dat
 `preprocessor.py`<br>
 
    1. `preprocessor.py` is an IBM data converter that converts IBM data to the format of `graph.txt`
-   2. You can modify --ibm_dataset parameter in args.py to input IBM data file then enter `python preprocessor.py` or `python3 preprocessor.py` in command line to run the program.
+   2. You can modify `--ibm_dataset` parameter in `args.py` to input IBM data file then enter `python preprocessor.py` or `python3 preprocessor.py` in command line to run the program.
    
 <br> 
 
