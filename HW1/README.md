@@ -1,11 +1,22 @@
 ## HW1: &nbsp;*Apriori-algorithm / FP-growth algorithm*
 Full report is in the HW1 directory
-#### Description:<br>
+### Description:<br>
 Implement **Apriori-algorithm** and **FP-growth algorithm** , and use IBM Quest Synthetic Data Generator <br>
 to generate some datasets to analyze how the support and confidence affect the association of data <br>
 selected from the dataset. Furthermore,test and analyze datasets downloaded from Kaggle.
+### Arguments setting 
+* --min_sup: minimum support
+* --min_conf: minimum confidence
+* --dataset: Set the dataset you want to import and remember to include the file extension.
 
-#### Structure of the report:<br>
+### Code Excution 
+1. There are three arguments in the args.py file. You can modify the arguments in `args.py`, then enter `python main.py` or `python3 main.py` in the command line to run the program.
+2. Alternatively, you can modify the arguments and run the program by directly referencing the parameters. To do so, <br>
+enter `python main.py --min_sup --min_conf --dataset` or `python3 main.py --min_sup --min_conf --dataset` in the command line.<br>
+**Example** <br>
+`python main.py --min_sup=0.11 --min_conf=0.9 --dataset=kaggle.txt` 
+
+### Structure of the report:<br>
 1. Introduction to the programming structure of apriori-algorithm and FP-growth algorithm
 2. Explanation of parameters for self-generated datasets using IBM Data Generator.
 3. Testing IBM Dataset with Apriori algorithm and FP-growth algorithm.
