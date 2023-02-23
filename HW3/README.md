@@ -18,4 +18,24 @@ the characteristics of each algorithm.
 * **--SimRank:** Name of SimRank output file.
 
 ### Code Excution 
-1. There are six arguments in the `args.py` file. You can modify the arguments in `args.py`, then enter `python main.py` or `python3 main.py` in the command line to run the program.
+ `main.py`
+
+1. There are six arguments in the `args.py` file. You can modify the arguments in `args.py`, then enter `python main.py` or `python3 main.py` in the command line to run the program.<br>
+
+      **Quickly modify**
+
+      In `args.py`, there is a parameter called `title`.You can quickly complete the setting by modifying `title`.
+
+2. Alternatively, you can modify the arguments and run the program by directly referencing the parameters. To do so, <br>
+enter `python main.py --dataset --authority --hub --PageRank --SimRank --ibm_dataset ` or  <br>
+`python3 main.py --dataset --authority --hub --PageRank --SimRank --ibm_dataset` in the command line.<br>
+
+* **Example** <br>
+`python main.py --dataset=graph.txt --authority=graph.txt --hub=graph.txt --PageRank=graph.txt --SimRank=graph.txt --ibm_dataset=ibm-5000.txt `
+
+<br>
+
+`preprocessor.py`<br>
+
+   1. `preprocessor.py` is an IBM data converter that converts IBM data to the format of `graph.txt`
+   2. You can modify --ibm_dataset parameter in args.py to input IBM data file then enter `python preprocessor.py` or `python3 preprocessor.py` in command line to run the program.
