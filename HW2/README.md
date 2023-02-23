@@ -2,12 +2,25 @@
 
 Full report is in the HW2 directory
 
-#### Description:<br>
+### Description:<br>
 Analyze the **self-generated data** and **set rules** to classify the data with machine learning models. <br>
 Then observe and analyze whether different classifiers can correctly identify the rules for classifying <br>
 the data, and whether there are different results when the data contains noise.
 
-#### Structure of the report:<br>
+### Arguments setting
+* **--gen_data:** Name of the generated dataset, and the generated data will be stored in the input file.
+* **--dataset:** Set the dataset you want to import and remember to include the file extension.
+* **--dot_name:** Name of the .dot file for the decision tree, `DO NOT` add file extension in this augument because <br>
+* the file extension has been pre-defined in the program. 
+
+### Code Excution 
+1. There are three arguments in the `args.py` file. You can modify the arguments in `args.py`, then enter `python main.py` or `python3 main.py` in the command line to run the program.
+2. Alternatively, you can modify the arguments and run the program by directly referencing the parameters. To do so, <br>
+enter `python main.py --gen_data --dataset --dot_name` or `python3 main.py --gen_data --dataset --dot_name` in the command line.<br>
+* **Example** <br>
+`python main.py --gen_data=data2.csv --dataset=data2.csv --dot_name=data2` 
+
+### Structure of the report:<br>
 1. Topic setting & Data design
 2. Features list
 3. Absolutely right rules setting
