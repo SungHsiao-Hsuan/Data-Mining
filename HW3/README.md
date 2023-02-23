@@ -1,5 +1,5 @@
 ## **HW3:** &nbsp; *Implement HIS, PageRank, SimRank* <br>
-Full report is in the HW1 directory
+Full report is in the HW3 directory
 
 ### Description:<br>
 Implement **HITS**, **PageRank**, and **SimRank algorithms**, and calculate the **authority**, **hubs**, **Pagerank**, <br>
@@ -39,3 +39,10 @@ enter `python main.py --dataset --authority --hub --PageRank --SimRank --ibm_dat
 
    1. `preprocessor.py` is an IBM data converter that converts IBM data to the format of `graph.txt`
    2. You can modify --ibm_dataset parameter in args.py to input IBM data file then enter `python preprocessor.py` or `python3 preprocessor.py` in command line to run the program.
+   
+<br> 
+
+`draw_graph.py` <br>
+
+You can run `draw_graph.py` to to visualize what the `graph.txt` looks like. <br>
+The graph you want to visualize is determined by the title argument in args.py.
