@@ -48,7 +48,7 @@ You can run `draw_graph.py` to to visualize what the `graph.txt` looks like. <br
 The graph you want to visualize is determined by the title argument in args.py.
 
 ### Structure of the report:<br>
- * **Find a way**: Find a way (increase/delete nodes, edges) to increase authority, hub, PageRank and SimRank.
+ * **Find a way**: Find a way to increase the authority, hub, PageRank, and SimRank of vertex 1 by adding or deleting nodes or edges.
  * Algorithm description
  * Result analysis and discussion
  * Effectiveness analysis
