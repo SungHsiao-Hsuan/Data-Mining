@@ -46,3 +46,10 @@ enter `python main.py --dataset --authority --hub --PageRank --SimRank --ibm_dat
 
 You can run `draw_graph.py` to to visualize what the `graph.txt` looks like. <br>
 The graph you want to visualize is determined by the title argument in args.py.
+
+### Structure of the report:<br>
+ * **Find a way**: Find a way (increase/delete nodes, edges) to increase authority, hub, PageRank and SimRank.
+ * Algorithm description
+ * Result analysis and discussion
+ * Effectiveness analysis
+ * Conclusion
